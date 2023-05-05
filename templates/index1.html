@@ -1,12 +1,22 @@
+<!-- Se crea un encabezado de nivel 1 para el formulario -->
 <h1>Directorio de Contactos</h1>
+
+<!-- Se crea un formulario que se envía a la ruta /new por el método POST -->
 <form action="/new" method="POST">
+
+  <!-- Se crea un campo de entrada de texto para el nombre completo del contacto -->
   <input
     type="text"
     name="fullname"
     placeholder="Consigne su nombre completo"
   />
+
+  <!-- Se crea un campo de entrada de texto para el correo electrónico del contacto -->
   <input type="text" name="email" placeholder="Consigne su correo" />
+
+  <!-- Se crea un campo de entrada de texto para el número de teléfono del contacto -->
   <input type="text" name="phone" placeholder="Consigne su telefono" />
 
+  <!-- Se crea un botón de envío para enviar el formulario al servidor -->
   <button>Guardar</button>
 </form>

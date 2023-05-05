@@ -1,6 +1,17 @@
+<!-- Se crea un encabezado de nivel 1 -->
 <h1>Lista de Contactos Registrados</h1>
+
+<!-- Se utiliza un bucle for para iterar a través de los contactos y mostrar la información de cada uno -->
 {% for contact in contactos %}
-<p>{{ contact.fullname }}</p>
-<p>{{ contact.email }}</p>
-<p>{{ contact.phone }}</p>
+
+    <!-- Se muestra el nombre completo del contacto -->
+    <p>{{ contact.fullname }}</p>
+
+    <!-- Se muestra el correo electrónico del contacto -->
+    <p>{{ contact.email }}</p>
+
+    <!-- Se muestra el número de teléfono del contacto -->
+    <p>{{ contact.phone }}</p>
+
+<!-- Se termina el bucle for -->
 {% endfor %}
